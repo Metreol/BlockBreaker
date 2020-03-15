@@ -1,12 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
 public class SceneLoader : MonoBehaviour {
-
-    [SerializeField] string nextScene;
+    // Config vars
+    [SerializeField] string nextScene = "StartMenu";
 
     public void LoadNextSceneByName() {
         SceneManager.LoadScene(nextScene);
